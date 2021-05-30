@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+host:
+  url: "http://localhost:${server.port}"
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_camunda_db
+    username: spring_camunda_user
+    password: spring_camunda_password
+management:
+  endpoint:
+    health:
+      show-details: always
+camunda:
+  bpm:
+    admin-user:
+      id: user
+      password: password
+    filter:
+      create: All tasks

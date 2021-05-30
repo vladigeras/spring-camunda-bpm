@@ -1,11 +1,11 @@
-package ru.vladigeras.springcamundabpm
+package ru.vladigeras.springcamundabpm.delegate
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SpringCamundaBpmApplication
+class CamundaBpmDelegate
 
 fun main(args: Array<String>) {
-    runApplication<SpringCamundaBpmApplication>(*args)
+    runApplication<CamundaBpmDelegate>(*args)
 }
